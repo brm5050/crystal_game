@@ -1,0 +1,29 @@
+.gemPics{
+	width: 100%;
+	
+
+}
+
+.results{
+	float: left;
+	width: 20%;
+	height: 100px;
+}
+.btn-group{
+	width: 10%;
+	height:100px;
+}
+
+
+#scoreTitle{
+	background: lightgreen;
+	clear: both;
+	margin-bottom: 10px;
+}
+
+
+#totalScore{
+	background-color: lightgreen;
+	clear: both;
+	margin-top:5%;
+}
