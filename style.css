@@ -1,7 +1,36 @@
+body {
+	font-family: 'Macondo' , cursive;
+	color: lightblue;
+	background-image: url('images/background3.jpg');
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#title{
+	background-color: beige;
+}
+
+#instructions{
+	background-color: black;
+}
+
 .gemPics{
 	width: 100%;
 	
 
+}
+
+#winner{
+	margin-left: 600px
+	background-color:black;
+	font-size: 25pt;
+
+}
+
+#number{
+	margin-left: 600px
+	background-color:black;
+	font-size: 25pt;
 }
 
 .results{
@@ -16,14 +45,15 @@
 
 
 #scoreTitle{
-	background: lightgreen;
+	
 	clear: both;
 	margin-bottom: 10px;
+	background-color: black;
 }
 
 
 #totalScore{
-	background-color: lightgreen;
+	background-color: black;
 	clear: both;
 	margin-top:5%;
 }

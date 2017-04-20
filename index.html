@@ -10,92 +10,87 @@
 
 <script type="text/javascript" src="script.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+
 
 </head>
 
 <body>
 
-<div class="container">
-
-	<div class="row">
-
-		<h1>Crystals Collector </h1>
-
-	</div>
-
-
-	<div class="row">
-		<p>You will be given a random number at the start of the game.
-		<br>
-		There are four crystals below.  By clicking on a crystal you will add a specific amount 
-		of points to your total score.
-		<br>
-		You win the game by matching your total score to the random number but you will lose the game
-		if your total score goes above the random number.
-		<br>
-		The value of each crystal is hidden from you until you click on it.
-		<br>
-		Each time when the game starts, the game will change the values of each crystal.</p>
-
-	</div>
-
-	<div class="row">
-		
-		<div id="score" class="results">
-			<p>#</p>
+	<div class="container">
+		<div class="row">
+			<h1>Crystals Collector </h1>
 		</div>
 
-		<div id="winsLosses" class="results">
-			<p>#</p>
+		<div class="row" id="instructions">
+			<p>You will be given a random number at the start of the game.
+			<br>
+			There are four crystals below.  By clicking on a crystal you will add a specific amount 
+			of points to your total score.
+			<br>
+			You win the game by matching your total score to the random number but you will lose the game
+			if your total score goes above the random number.
+			<br>
+			The value of each crystal is hidden from you until you click on it.
+			<br>
+			Each time when the game starts, the game will change the values of each crystal.</p>
 		</div>
 
+		<!--score box and wins loss box -->
+		<div class="row">
+			<div id="score" class="results">
+				<p id= "winner">#</p>
+			</div>
 
-	<!--score box and wins loss box -->
+			<div id="winsLosses" class="results">
+				<p id=number>#</p>
+			</div>
+		</div>
 
-	</div>
-
-	<div class="row">
-
-	<!--pictures of crystals-->
+		<div class="row">
+			<!--pictures of crystals-->
 			<div class="btn-group">
-  				<button class="btn btn-default btn-lg dropdown-toggle"  id="greenBtn" type="button" aria-haspopup="true" aria-expanded="false" >
+				<!-- add a data- attribute to get the gem color -->
+  			<button data-gem-color="green" class="btn btn-default btn-lg dropdown-toggle" id="greenBtn" type="button" aria-haspopup="true" aria-expanded="false" >
 				<img src="images/gemGreen.jpg" alt="Green Gem" class=gemPics>
 				</button>
 			</div>
 
 
 			<div class="btn-group">
-  				<button class="btn btn-default btn-lg dropdown-toggle"  id="redBtn" type="button" aria-haspopup="true" aria-expanded="false" >
+				<button data-gem-color="red" class="btn btn-default btn-lg dropdown-toggle"  id="redBtn" type="button" aria-haspopup="true" aria-expanded="false" >
 				<img src="images/gemRed.jpg" alt="Red Gem" class=gemPics>
 				</button>
 			</div>
 
 			<div class="btn-group">
-  				<button class="btn btn-default btn-lg dropdown-toggle"  id="blueBtn" type="button" aria-haspopup="true" aria-expanded="false" >
+  				<button data-gem-color="blue" class="btn btn-default btn-lg dropdown-toggle"  id="blueBtn" type="button" aria-haspopup="true" aria-expanded="false" >
 				<img src="images/gemBlue.png" alt="Blue Gem" class=gemPics>
 				</button>
 			</div>
 
 			<div class="btn-group">
-  				<button class="btn btn-default btn-lg dropdown-toggle"  id="greenBtn" type="button" aria-haspopup="true" aria-expanded="false" >
-				<img src="images/gemYellow.jpg" alt="Green Gem" class=gemPics>
+				<!-- greenBtn ID was already used in the first btn-group -->
+				<button data-gem-color="yellow" class="btn btn-default btn-lg dropdown-toggle"  id="yellowBtn" type="button" aria-haspopup="true" aria-expanded="false" >
+					<img src="images/gemYellow.jpg" alt="Green Gem" class=gemPics>
 				</button>
 			</div>
-
-	</div>
-
-	<div class="row" id="totalScore">
-
-	<!--Your total score box-->
-		<div id="scoreTitle">
-			<h1>Your total score is:</h1>
 		</div>
 
-		<div id="totalscore">
-			<h1>#</h1>
+		<!-- removed id=totalscore here because you use that ID again below -->
+		<div class="row">
+			<!--Your total score box-->
+			<div id="scoreTitle">
+				<h1>Your total score is:</h1>
+			</div>
+
+			<div id="totalscore">
+				<h1>#</h1>
+			</div>
 		</div>
-
+		<!-- added missing closing div where class='container' -->
 	</div>
-
-
-
+<!-- added missing closing body tag -->
+</body>
+<!-- added missing closing html tag -->
+</html>
